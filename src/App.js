@@ -26,7 +26,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/email/response",
+        "http://emailreplygenerator-env.eba-kwnaahps.eu-north-1.elasticbeanstalk.com/api/email/response",
         user
       );
       setGeneratedReply(response.data);
